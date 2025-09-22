@@ -41,4 +41,16 @@
         app:layout_constraintTop_toBottomOf="@+id/btnChangeTextClick"
         app:layout_constraintVertical_bias="0.068" />
 
+    <Button
+        android:id="@+id/btnChangeTextBgColorClick"
+        android:layout_width="140dp"
+        android:layout_height="72dp"
+        android:text="@string/change_text_background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeTextColorClick"
+        app:layout_constraintVertical_bias="0.122" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

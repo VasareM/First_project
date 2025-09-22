@@ -1,6 +1,8 @@
 package com.example.first_project;
 
 import static android.graphics.Color.CYAN;
+import static android.graphics.Color.RED;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvFirstLabel;
     Button btnChangeTextColorClick;
+    Button btnChangeTextBgColorClick;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (tvFirstLabel != null) {
                     tvFirstLabel.setTextColor(CYAN);
+                }
+            }
+        });
+
+        btnChangeTextBgColorClick = findViewById(R.id.btnChangeTextBgColorClick);
+        btnChangeTextBgColorClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (tvFirstLabel != null) {
+                    tvFirstLabel.setBackgroundColor(RED);
                 }
             }
         });

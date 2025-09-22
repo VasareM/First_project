@@ -1,6 +1,9 @@
 package com.example.first_project;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void changeTextClick(View view) {
+        TextView tvFirstLabel = findViewById(R.id.tvFirstLabel);
+        tvFirstLabel.setText("Hello World! Changed");
     }
 }

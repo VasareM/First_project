@@ -3,7 +3,6 @@ package com.example.first_project;
 import static android.graphics.Color.CYAN;
 import static android.graphics.Color.RED;
 
-import static android.graphics.Color.CYAN;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
@@ -61,4 +60,6 @@ public class MainActivity extends AppCompatActivity {
     public void changeTextClick(View view) {
         tvFirstLabel.setText("Hello World! Changed");
     }
+
+
 }

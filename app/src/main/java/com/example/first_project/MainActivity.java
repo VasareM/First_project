@@ -30,5 +30,4 @@ public class MainActivity extends AppCompatActivity {
         TextView tvFirstLabel = findViewById(R.id.tvFirstLabel);
         tvFirstLabel.setText("Hello World! Changed");
     }
-    // commenting changes
 }
